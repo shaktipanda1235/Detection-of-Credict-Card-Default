@@ -1,2 +1,2 @@
-# Detection-of-Credict-Card-Default
-‘Buy Now, Pay Later’ (BNPL) is a type of short-term financing used by start-ups like Slice, ZestMoney, Simpl, LazyPay, and Uni, are lowering the bars while approving applications. Building models to detect such customers beforehand.
+# Inspiration
+During my stay in Banglore while pursuing a Data Science course, I came across usage of app like 'SIMPL' and 'LazyPay' where Credits are given without any proper verification. Therefore I wanted to dive deeper into such usecases. But the problem associated with this problem was finding a dataset representing the scenario. With further research I found 'Taiwan Bank Credit Card Dataset' from UCI repository where a customer paying habits are observed for six months before considering him/her as default.
