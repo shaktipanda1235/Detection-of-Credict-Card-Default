@@ -9,3 +9,4 @@ During my stay in Banglore while pursuing a Data Science course, I came across u
   *All of the above conclusions are tested Statistically using ttest for independence and chi-square test for independence depending upon the datatype we are tring to find independence of.
   ![image](https://user-images.githubusercontent.com/102746816/161371196-ab84277f-3d33-49f8-9140-f814040c6c38.png)
   *Most of the customers are paying the partial bill amount and duly paying. And when payment is delayed more than 2 months, the chances of default goes higher than 50%
+  
