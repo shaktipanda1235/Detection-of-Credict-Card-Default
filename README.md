@@ -21,5 +21,28 @@ Three new features are created from the existing data which can be considered as
     * This column consists of sum of all delays in payment of bill during six months.
   * Payment_Mean
     * This column represents average of payment made by customers with respect to their bill amount.
+
+#Base Model Fitting
+* Various base models are fit and data is prepared according to their assumptions. e.g. Data is scaled for KNNClassifier whereas data is Transformed for LogisticRegression.
+* For ensemble techniques, validation_curve is plotted in a semi-log graph to find the appropriate range using values around elbow-point before going for GridSearchCV to make hypertuning of parameters faster.
+* Various model evaluation metrics are compared for various models to later find that GBClassifier giving the best recall value. Also feature_importance for various models are found out to observe the predictor deciding most in classification.
+
+![image](https://user-images.githubusercontent.com/102746816/161372666-5f83d221-c977-47da-9a9b-7b3498a5c504.png)
+
+# Why we are interested in recall value of minority class(defaulters in our case) ?
+* Detection of defaulting customers became more bussiness worthy than predicting wether that customer will default or not.
+* Increasing recall score helps in decreasing the FN of our model which is makes more sense in decreasing default rates. After all above steps further research is carried out to increase the recall of minority class while sacrificing precision in the process.
+# Handling Imbalance in dataset
+* Due to lesser number of minority class instances, our model is not learning much about them, giving a near perfect precision and recall for non-defaulters compared to defaulters.
+* Various SMOTEs are used to improve the recall of model, but the problem associated with SMOTE was creating artificial datapoints which led to overfitting of minority class.
+* SMOTE+ENN gave the best result while considering recall as it considers both oversampling of minority class while deleting majority class which are unnecessary to our analysis(which can be considered as undersampling of majority class).
+
+![image](https://user-images.githubusercontent.com/102746816/161372732-d9f94660-a0f2-49f6-8e55-a523751ed207.png)
+
+# Precision-Recall model evalution metric instead of traditional ROC-AUC.
+* As most of interests fell into detecting defaulters, ROC-AUC looses its vitality as it a measure for detection both majority and minority class. Though it was performed while selecting best base model. So more optimisation was carried out for minority class which effectiveness can be seen visually using a precision-recall curve.
+
+![image](https://user-images.githubusercontent.com/102746816/161372703-4bd0b851-2586-4d61-b8bf-d15529b973ae.png)
+
     
   
