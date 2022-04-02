@@ -22,7 +22,7 @@ Three new features are created from the existing data which can be considered as
   * Payment_Mean
     * This column represents average of payment made by customers with respect to their bill amount.
 
-#Base Model Fitting
+# Base Model Fitting
 * Various base models are fit and data is prepared according to their assumptions. e.g. Data is scaled for KNNClassifier whereas data is Transformed for LogisticRegression.
 * For ensemble techniques, validation_curve is plotted in a semi-log graph to find the appropriate range using values around elbow-point before going for GridSearchCV to make hypertuning of parameters faster.
 * Various model evaluation metrics are compared for various models to later find that GBClassifier giving the best recall value. Also feature_importance for various models are found out to observe the predictor deciding most in classification.
