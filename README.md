@@ -1,7 +1,7 @@
 # Inspiration
 During my stay in Banglore while pursuing a Data Science course, I came across usage of app like 'SIMPL' and 'LazyPay' where Credits are given without any proper verification. Therefore I wanted to dive deeper into such usecases. But the problem associated with this problem was finding a dataset representing the scenario. With further research I found 'Taiwan Bank Credit Card Dataset' from UCI repository where a customer paying habits are observed for six months before considering him/her as default.
 # Insights from Exploratory Data Analysis
-  Markup:
+  
   *Around 24% of male customers and around 20.8% of female customers are defaulting, which suggests a customer being a male has more likelihood to default.
   *Customers having 'High-School' as highest education have high probability of defaulting next month.
   *Customers from "Younger Age" group are making more default than "Older Age" group which can be indication of stable income for later.
