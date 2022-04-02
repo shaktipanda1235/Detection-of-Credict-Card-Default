@@ -11,9 +11,10 @@ During my stay in Banglore while pursuing a Data Science course, I came across u
   * Most of the customers are paying the partial bill amount and duly paying. And when payment is delayed more than 2 months, the chances of default goes higher than 50% where 2 in y-axis indicates 2 months delay.
 
 # Feature Engineering
-* Three new features are created from the existing data which can be considered as six-month summary of customer paying habits.
+Three new features are created from the existing data which can be considered as six-month summary of customer paying habits.
   * Highest_Delay
     * This represents maximum delay in payments made by customer in duration of six months while paying bill for each month. e.g. If a customer delayed 2 months for paying first month bill and 4 months delay in paying 3rd month bill, the content of this column will be 4.
+    
     ![image](https://user-images.githubusercontent.com/102746816/161371718-22b27e43-2cf6-42df-8a7b-5b5b241a3efe.png)
 
   * Count_of_Delay
